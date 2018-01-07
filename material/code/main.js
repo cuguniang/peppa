@@ -25,10 +25,12 @@ var bubble = document.getElementById("bubble");//点击按钮的音效
 //淡入行为
 var fadeIn = {
 	lastT :0,
+	alpha:0,
 	execute: function (sprite, ctx,time) {
 		var nowT = +new Date();
 		if(nowT - this.lastT >= time){
-			ctx.globalAlpha = parseInt(ctx.globalAlpha*10+1)/10;
+			this.alpha ++;
+			ctx.globalAlpha =alpha/10;
 			this.lastT = nowT;
 		}
 	}
@@ -159,6 +161,7 @@ for(var i = 0;i<4;i++){
 startimg[0].onload = function(){ //初始化界面
 	//alert("为保证游戏效果，请使用Chrome浏览器。");
 	ctx.globalAlpha = 0;
+	fadeIn.alpha = 0;
 	radius = 0;
 	requestNextAnimationFrame(startFadein);//淡入进入主界面
 }
