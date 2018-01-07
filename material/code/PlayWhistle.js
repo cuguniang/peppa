@@ -67,6 +67,7 @@ var PlayWhistle = (function() {
 			canvas.removeEventListener("mousemove",onMousemoveInPlayWhistle);
 			flag = false;
 			bubble.load();
+			whistle.load();
 			bubble.play();
 			START();
 		}
