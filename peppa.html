@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style type="text/css" media="screen">
+			#whistle {
+				/* 隐藏元素 */
+	            display: none;
+	         }
+			#canvas{
+				display: block;
+				margin: auto;
+			}
+
+		</style>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<canvas id="canvas" width="1000" height="700" style="border-radius:10%; border:solid 3px" >
+		Your Browser does not support Canvas, please upgrade
+	</canvas>
+	
+	<audio id="clap" src="material/audio/clap.mp3"></audio>
+	<audio id="lose" src="material/audio/lose.mp3"></audio>
+	<audio id="bubble" src="material/audio/bubble.mp3"></audio>
+	<audio id="countdown" src="material/audio/321.mp3"></audio>
+	<audio id ="bgm" src="material/audio/bgm.mp3" loop="loop" ></audio>
+	<!-- 四个调的音频文件 -->
+	<audio id ="DO4" src="material/audio/Scale/4/C 4.mp3"></audio>
+	<audio id ="RE4" src="material/audio/Scale/4/D 4.mp3"></audio>
+	<audio id ="MI4" src="material/audio/Scale/4/E 4.mp3"></audio>
+	<audio id ="FA4" src="material/audio/Scale/4/F 4.mp3"></audio>
+	<audio id ="SO4" src="material/audio/Scale/4/G 4.mp3"></audio>
+	<audio id ="LA4" src="material/audio/Scale/4/A 4.mp3"></audio>
+	<audio id ="SI4" src="material/audio/Scale/4/B 4.mp3"></audio>
+	
+	<audio id ="DO5" src="material/audio/Scale/5/C 5.mp3"></audio>
+	<audio id ="RE5" src="material/audio/Scale/5/D 5.mp3"></audio>
+	<audio id ="MI5" src="material/audio/Scale/5/E 5.mp3"></audio>
+	<audio id ="FA5" src="material/audio/Scale/5/F 5.mp3"></audio>
+	<audio id ="SO5" src="material/audio/Scale/5/G 5.mp3"></audio>
+	<audio id ="LA5" src="material/audio/Scale/5/A 5.mp3"></audio>
+	<audio id ="SI5" src="material/audio/Scale/5/B 5.mp3"></audio>
+
+	<audio id ="DO6" src="material/audio/Scale/6/C 6.mp3"></audio>
+	<audio id ="RE6" src="material/audio/Scale/6/D 6.mp3"></audio>
+	<audio id ="MI6" src="material/audio/Scale/6/E 6.mp3"></audio>
+	<audio id ="FA6" src="material/audio/Scale/6/F 6.mp3"></audio>
+	<audio id ="SO6" src="material/audio/Scale/6/G 6.mp3"></audio>
+	<audio id ="LA6" src="material/audio/Scale/6/A 6.mp3"></audio>
+	<audio id ="SI6" src="material/audio/Scale/6/B 6.mp3"></audio>
+	
+	<audio id ="DO7" src="material/audio/Scale/7/C 7.mp3"></audio>
+	<audio id ="RE7" src="material/audio/Scale/7/D 7.mp3"></audio>
+	<audio id ="MI7" src="material/audio/Scale/7/E 7.mp3"></audio>
+	<audio id ="FA7" src="material/audio/Scale/7/F 7.mp3"></audio>
+	<audio id ="SO7" src="material/audio/Scale/7/G 7.mp3"></audio>
+	<audio id ="LA7" src="material/audio/Scale/7/A 7.mp3"></audio>
+	<audio id ="SI7" src="material/audio/Scale/7/B 7.mp3"></audio>
+	
+	<video id="whistle" src="material/video/piano dream.mp4"></video>
+
+	<script type="text/javascript" src="material/code/requestNextAnimationFrame.js"></script>
+	<script type="text/javascript" src="material/code/sprites.js"></script>
+	<script type="text/javascript" src="material/code/SCALE.js"></script>
+	<script type="text/javascript" src="material/code/STUDY.js"></script>
+	<script type="text/javascript" src="material/code/PlayWhistle.js"></script>
+	<script type="text/javascript" src="material/code/TEST.js"></script>
+	<script type="text/javascript" src="material/code/main.js"></script>
+</body>
+</html>
