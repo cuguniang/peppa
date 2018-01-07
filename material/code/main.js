@@ -49,6 +49,8 @@ function START() {//主界面
 
 	canvas.addEventListener("mousemove",onMousemoveStart);
 	canvas.addEventListener("click",onClickStart);
+	//
+	canvas.addEventListener("touchstart", onTouchStart);
 }
 function startFadein() {
 	
@@ -137,11 +139,18 @@ function onClickStart(event) {
 
 			canvas.removeEventListener("mousemove",onMousemoveStart);
 			canvas.removeEventListener("click",onClickStart);
+			canvas.removeEventListener("touchstart",onTouchStart);
 			return;
 		}
 	}
 }
-
+function onTouchStart(event){
+	
+	var point = {x:event.touches[0].clientX,y:event.touches[0].clientY]};
+	
+	{PlayWhistle.play(canvas);}
+	
+}
 //4. 初始化块............................................................
 for(var i = 0;i<4;i++){
 	startimg[i] = new Image();
