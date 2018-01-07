@@ -146,7 +146,7 @@ function onClickStart(event) {
 }
 function onTouchStart(event){
 	
-	var point = {x:event.touches[0].clientX,y:event.touches[0].clientY]};
+	var point = {x:event.touches[0].clientX,y:event.touches[0].clientY};
 	
 	{PlayWhistle.play(canvas);}
 	
