@@ -30,7 +30,7 @@ var fadeIn = {
 		var nowT = +new Date();
 		if(nowT - this.lastT >= time){
 			this.alpha ++;
-			ctx.globalAlpha =alpha/10;
+			ctx.globalAlpha =this.alpha/10;
 			this.lastT = nowT;
 		}
 	}
